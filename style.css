@@ -24,25 +24,26 @@ body{
 
 .wrapper{
     color:rgb(210, 210, 210);
+    display:flex;
     margin-top:50px;
 }
 
 .wrapper .input-field{
-    z-index: 1;
+    z-index: -9999;
     opacity:0;
     position: absolute;
 }
 
 .wrapper .content-box{
-    padding:10px 10px 0;
+    padding:100px 10px 0;
 }
 
 .time{
     color:rgb(210, 210, 210);
     width:100px;
     height: 30px;
-    position:relative;
-    left:40%;
+    position:absolute;
+    left:60%;
     margin: 70px auto;
     border: 2px solid rgb(90, 90, 90);
     border-radius: 13px;

@@ -50,6 +50,7 @@ const mistakeTag = document.querySelector(".mistake span")
 const wpmTag = document.querySelector(".wpm span")
 const cpmTag = document.querySelector(".cpm span")
 const btn = document.querySelector("button .btn") 
+const timer = document.querySelector(".time")
 
 let hard = document.querySelector(".hard");
 let medium = document.querySelector(".medium");
@@ -97,6 +98,7 @@ function initTyping() {
     const characters = typingText.querySelectorAll("span");
     let typedChar = inputField.value.split("")[charIndex];
     timeDisplay.style.opacity = "1";
+    timer.style.display ="none";
 
     if(charIndex < characters.length - 1 && t > 0){
 
